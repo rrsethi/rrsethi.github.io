@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Upgrade Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ubuntu Version Upgrade Guide</h1>
+        <p>This guide will walk you through the steps to upgrade your Ubuntu system to the latest LTS version.</p>
+        
+        <h2>Steps to Upgrade</h2>
+        <div class="code-block">
+            <p>1. Update the package list and upgrade the installed packages:</p>
+            <pre><code>sudo apt-get update -y && sudo apt-get upgrade -y</code></pre>
+            <pre><code>sudo apt update</code></pre>
+            <pre><code>sudo apt upgrade -y</code></pre>
+        </div>
+        
+        <div class="code-block">
+            <p>2. Perform a distribution upgrade:</p>
+            <pre><code>sudo apt dist-upgrade -y</code></pre>
+        </div>
+        
+        <div class="code-block">
+            <p>3. Install the release upgrader core:</p>
+            <pre><code>sudo apt-get install ubuntu-release-upgrader-core -y</code></pre>
+        </div>
+        
+        <div class="code-block">
+            <p>4. Modify the release upgrades file:</p>
+            <pre><code>sudo nano /etc/update-manager/release-upgrades</code></pre>
+            <p>Change <strong>Prompt</strong> to <strong>lts</strong>.</p>
+        </div>
+        
+        <div class="code-block">
+            <p>5. Run the release upgrade:</p>
+            <pre><code>sudo do-release-upgrade</code></pre>
+        </div>
+        
+        <div class="code-block">
+            <p>6. Final update and upgrade after the release:</p>
+            <pre><code>sudo apt-get update -y && sudo apt-get upgrade -y</code></pre>
+        </div>
+        
+        <p>Follow these steps to ensure a smooth upgrade of your Ubuntu system to the latest LTS version.</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
