@@ -1,0 +1,4 @@
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    --accent-color: hsl(var(--hue-color), 75%, 50%);
